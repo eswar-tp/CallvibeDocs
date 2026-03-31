@@ -64,13 +64,14 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: 'light',
+      respectPrefersColorScheme: false,
     },
     navbar: {
       logo: {
         alt: 'CallVibe Logo',
         src: 'img/logo.webp',
-        srcDark: 'img/logo-dark.webp',
+        srcDark: 'img/logo.webp',
       },
       items: [
         {
