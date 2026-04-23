@@ -13,10 +13,14 @@ title: Team Management
 4. For agent role, map allowed agent names.
 5. Send invitation.
 
+![Teams page](/img/teams.JPG)
+
 ## Roles
 
 - Owner: Full tenant access
 - Agent: Scoped visibility using mapped agent names
+
+<img src="/img/invite.JPG" alt="Send Invitation" width="300" />
 
 ## Manage Existing Members
 

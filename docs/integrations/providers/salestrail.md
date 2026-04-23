@@ -17,8 +17,14 @@ title: SalesTrail
 4. Click Connect.
 5. Start worker.
 
+![Settings page](/img/settings.JPG)
+
+![Salestrail connection](/img/salestrail.JPG)
+
 ## Validation
 
 - Integration status shows Connected.
 - Worker runs without provider error.
 - New calls appear in Calls view.
+
+<img src="/img/salestrail-connected.JPG" alt="After connection" width="200" />
