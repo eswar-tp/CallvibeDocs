@@ -61,6 +61,7 @@ const config: Config = {
   ],
 
   themeConfig: {
+    image: 'img/logo.png',
     colorMode: {
       defaultMode: 'light',
       respectPrefersColorScheme: false,
