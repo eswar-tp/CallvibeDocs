@@ -20,8 +20,14 @@ title: Exotel
 4. Select region.
 5. Click Connect and then start worker.
 
+![Settings page](/img/settings.JPG)
+
+![Exotel connection](/img/exotel.JPG)
+
 ## Validation
 
 - Exotel card shows Connected.
 - Worker does not show Exotel error.
 - Calls appear in Calls and Analytics.
+
+<img src="/img/exotel-connected.JPG" alt="After connection" width="200" />

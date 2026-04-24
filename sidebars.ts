@@ -35,7 +35,10 @@ const sidebars: SidebarsConfig = {
         'integrations/providers/exotel',
         'integrations/providers/kaleyra',
         'integrations/providers/8x8',
+        'integrations/providers/zadarma',
+        'integrations/providers/ringcentral',
         'integrations/whatsapp',
+        'integrations/crm/ghl',
       ],
     },
     {
@@ -45,6 +48,9 @@ const sidebars: SidebarsConfig = {
         'admin/team-management',
         'admin/notifications',
         'admin/customer-management',
+        'admin/categories',
+        'admin/lead-statuses',
+        'admin/lead-custom-fields',
       ],
     },
     {

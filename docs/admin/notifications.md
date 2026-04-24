@@ -10,6 +10,8 @@ title: Notifications
 - Connect using OAuth from Settings > Notifications.
 - Disconnect from the same screen when rotating workspaces.
 
+![Slack](/img/notifications.JPG)
+
 ## Email Digests
 
 Configure recipients with:
@@ -20,6 +22,8 @@ Configure recipients with:
 - Timezone
 - Send time
 - Enabled or disabled status
+
+<img src="/img/add-email-notification.JPG" alt="Email" width="300" />
 
 ## Operational Tips
 

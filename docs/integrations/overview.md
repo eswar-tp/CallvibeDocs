@@ -22,7 +22,13 @@ CallVibe supports tenant-scoped vendor integrations with centralized worker orch
 - Exotel: API key, API token, account SID, region
 - Kaleyra: API key
 - 8x8: API key, username, password, API secret
+- Zadarma: API key, API secret
+- RingCentral: Client ID, Client Token, JWT Token
 - WhatsApp: webhook URL and message:new events
+
+## Supported CRMs
+
+- GHL CRM: Location ID, Private Integration Token
 
 ## Worker Behavior
 
