@@ -41,18 +41,11 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          editUrl:
+            'https://github.com/eswar-tp/callvibedocs/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        // No blog for the docs site.
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -60,11 +53,31 @@ const config: Config = {
     ],
   ],
 
+  // Offline local search — no account or external crawler needed.
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        indexBlog: false,
+        docsRouteBasePath: '/docs',
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      },
+    ],
+  ],
+
   themeConfig: {
-    image: 'img/logo.png',
+    image: 'img/docusaurus-social-card.jpg',
     colorMode: {
       defaultMode: 'light',
-      respectPrefersColorScheme: false,
+      respectPrefersColorScheme: true,
+    },
+    announcementBar: {
+      id: 'whatsapp_intelligence',
+      content:
+        'New: bring WhatsApp conversations into CallVibe — <a href="/docs/integrations/whatsapp">see the guide</a>.',
+      isCloseable: true,
     },
     navbar: {
       logo: {
@@ -85,6 +98,33 @@ const config: Config = {
           position: 'left',
         },
         {
+          type: 'dropdown',
+          label: 'Integrations',
+          position: 'left',
+          items: [
+            { to: '/docs/integrations/overview', label: 'Overview' },
+            { to: '/docs/integrations/whatsapp', label: 'WhatsApp' },
+            { to: '/docs/integrations/crm/ghl', label: 'GoHighLevel' },
+            { to: '/docs/integrations/crm/leadsquared', label: 'LeadSquared' },
+          ],
+        },
+        {
+          type: 'dropdown',
+          label: 'Admin',
+          position: 'left',
+          items: [
+            { to: '/docs/admin/settings-overview', label: 'Settings' },
+            { to: '/docs/admin/team-management', label: 'Team management' },
+            { to: '/docs/admin/ai-insights', label: 'AI Insights' },
+            { to: '/docs/admin/usage', label: 'Usage & limits' },
+          ],
+        },
+        {
+          to: '/docs/api/overview',
+          label: 'API',
+          position: 'left',
+        },
+        {
           href: 'https://callvibe.ai',
           label: 'Website',
           position: 'right',
@@ -102,19 +142,39 @@ const config: Config = {
         {
           title: 'Docs',
           items: [
+            { label: 'Introduction', to: '/docs/intro' },
+            { label: 'Quickstart', to: '/docs/quickstart' },
+            { label: 'User Guide', to: '/docs/user-guide/account-and-access' },
             {
-              label: 'Quickstart',
-              to: '/docs/quickstart',
+              label: 'Troubleshooting',
+              to: '/docs/troubleshooting/common-issues',
             },
           ],
         },
         {
-          title: 'Product',
+          title: 'Integrations',
           items: [
-            {
-              label: 'Website',
-              href: 'https://callvibe.ai',
-            },
+            { label: 'Overview', to: '/docs/integrations/overview' },
+            { label: 'WhatsApp', to: '/docs/integrations/whatsapp' },
+            { label: 'GoHighLevel', to: '/docs/integrations/crm/ghl' },
+            { label: 'LeadSquared', to: '/docs/integrations/crm/leadsquared' },
+          ],
+        },
+        {
+          title: 'Admin',
+          items: [
+            { label: 'Settings', to: '/docs/admin/settings-overview' },
+            { label: 'Team management', to: '/docs/admin/team-management' },
+            { label: 'AI Insights', to: '/docs/admin/ai-insights' },
+            { label: 'Usage & limits', to: '/docs/admin/usage' },
+          ],
+        },
+        {
+          title: 'Company',
+          items: [
+            { label: 'Website', href: 'https://callvibe.ai' },
+            { label: 'Product', href: 'https://www.callvibe.ai/features/' },
+            { label: 'API Reference', to: '/docs/api/overview' },
           ],
         },
       ],

@@ -1,30 +1,286 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * CallVibe Docs — global theme.
+ * Built on Infima (bundled with the Docusaurus classic template).
+ * Brand: an audio-waveform gradient running cyan -> blue -> violet -> magenta.
  */
 
-/* You can override the default Infima variables here. */
+/* ------------------------------------------------------------------ */
+/* Self-hosted fonts (bundled at build time — works offline, CSP-safe) */
+/* ------------------------------------------------------------------ */
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/lexend/600.css';
+@import '@fontsource/lexend/700.css';
+@import '@fontsource/lexend/800.css';
+@import '@fontsource/jetbrains-mono/400.css';
+
+/* ------------------------------------------------------------------ */
+/* Brand tokens                                                        */
+/* ------------------------------------------------------------------ */
 :root {
-  --ifm-color-primary: #3b82f6;
-  --ifm-color-primary-dark: #2563eb;
-  --ifm-color-primary-darker: #1d4ed8;
-  --ifm-color-primary-darkest: #1d4ed8;
-  --ifm-color-primary-light: #3b82f6;
-  --ifm-color-primary-lighter: #f0f9ff;
-  --ifm-color-primary-lightest: #f0f9ff;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --cv-cyan: #22d3ee;
+  --cv-blue: #3b82f6;
+  --cv-violet: #7c3aed;
+  --cv-magenta: #ec4899;
+
+  --cv-gradient: linear-gradient(
+    90deg,
+    #22d3ee 0%,
+    #3b82f6 34%,
+    #7c3aed 66%,
+    #ec4899 100%
+  );
+  --cv-gradient-135: linear-gradient(
+    135deg,
+    #22d3ee 0%,
+    #3b82f6 34%,
+    #7c3aed 66%,
+    #ec4899 100%
+  );
+  --cv-gradient-soft: linear-gradient(
+    135deg,
+    rgba(34, 211, 238, 0.12),
+    rgba(124, 58, 237, 0.12) 55%,
+    rgba(236, 72, 153, 0.12)
+  );
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* ------------------------------------------------------------------ */
+/* Light mode — primary ramp anchored on brand violet                 */
+/* ------------------------------------------------------------------ */
+:root {
+  --ifm-color-primary: #7c3aed;
+  --ifm-color-primary-dark: #7024e8;
+  --ifm-color-primary-darker: #6a22db;
+  --ifm-color-primary-darkest: #571bb4;
+  --ifm-color-primary-light: #8c54ef;
+  --ifm-color-primary-lighter: #9563f0;
+  --ifm-color-primary-lightest: #b998f5;
+
+  /* Typography */
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif;
+  --ifm-heading-font-family: 'Lexend', var(--ifm-font-family-base);
+  --ifm-font-family-monospace: 'JetBrains Mono', ui-monospace, SFMono-Regular,
+    Menlo, monospace;
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.7;
+  --ifm-heading-font-weight: 700;
+  --ifm-heading-line-height: 1.2;
+  --ifm-h1-font-size: 2.6rem;
+  --ifm-h2-font-size: 1.9rem;
+
+  /* Shape & spacing */
+  --ifm-global-radius: 0.75rem;
+  --ifm-button-border-radius: 0.6rem;
+  --ifm-code-border-radius: 0.5rem;
+  --ifm-code-font-size: 92%;
+  --ifm-navbar-height: 4rem;
+  --ifm-navbar-item-padding-horizontal: 0.9rem;
+
+  /* Surfaces & shadows */
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.82);
+  --ifm-navbar-shadow: 0 1px 0 rgba(15, 17, 23, 0.06);
+  --ifm-global-shadow-lw: 0 1px 3px rgba(15, 17, 23, 0.08);
+  --ifm-global-shadow-md: 0 6px 24px rgba(15, 17, 23, 0.1);
+  --ifm-global-shadow-tl: 0 12px 40px rgba(15, 17, 23, 0.12);
+  --ifm-toc-border-color: rgba(15, 17, 23, 0.08);
+
+  --docusaurus-highlighted-code-line-bg: rgba(124, 58, 237, 0.1);
+}
+
+/* ------------------------------------------------------------------ */
+/* Dark mode — primary lightened for contrast on dark surfaces        */
+/* ------------------------------------------------------------------ */
 [data-theme='dark'] {
-  --ifm-color-primary: #3b82f6;
-  --ifm-color-primary-dark: #2563eb;
-  --ifm-color-primary-darker: #1d4ed8;
-  --ifm-color-primary-darkest: #1d4ed8;
-  --ifm-color-primary-light: #3b82f6;
-  --ifm-color-primary-lighter: #f0f9ff;
-  --ifm-color-primary-lightest: #f0f9ff;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #a78bfa;
+  --ifm-color-primary-dark: #9370f9;
+  --ifm-color-primary-darker: #8a64f8;
+  --ifm-color-primary-darkest: #6f3ff6;
+  --ifm-color-primary-light: #bba6fb;
+  --ifm-color-primary-lighter: #c4b2fc;
+  --ifm-color-primary-lightest: #e0d6fe;
+
+  --ifm-background-color: #0f1117;
+  --ifm-background-surface-color: #171a22;
+  --ifm-navbar-background-color: rgba(15, 17, 23, 0.72);
+  --ifm-navbar-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
+  --ifm-toc-border-color: rgba(255, 255, 255, 0.08);
+  --ifm-global-shadow-lw: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --ifm-global-shadow-md: 0 6px 24px rgba(0, 0, 0, 0.45);
+
+  --docusaurus-highlighted-code-line-bg: rgba(124, 58, 237, 0.24);
+}
+
+/* ------------------------------------------------------------------ */
+/* Reusable helpers                                                    */
+/* ------------------------------------------------------------------ */
+.cv-gradient-text {
+  background: var(--cv-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ------------------------------------------------------------------ */
+/* Navbar — frosted glass with a gradient underline                   */
+/* ------------------------------------------------------------------ */
+.navbar {
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+}
+
+.navbar::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--cv-gradient);
+  opacity: 0.9;
+}
+
+.navbar__logo {
+  height: 2rem;
+}
+
+.navbar__link,
+.navbar__brand {
+  font-weight: 600;
+}
+
+/* ------------------------------------------------------------------ */
+/* Buttons — primary carries the signature gradient                   */
+/* ------------------------------------------------------------------ */
+.button.button--primary {
+  background: var(--cv-gradient);
+  border: 0;
+  color: #fff;
+  transition: filter 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.button.button--primary:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+  box-shadow: var(--ifm-global-shadow-md);
+  color: #fff;
+}
+
+.button.button--secondary {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+}
+
+.button.button--secondary:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  background: var(--ifm-background-surface-color);
+}
+
+/* ------------------------------------------------------------------ */
+/* Links & headings                                                   */
+/* ------------------------------------------------------------------ */
+.markdown a {
+  font-weight: 500;
+}
+
+.markdown h1,
+.markdown h2 {
+  letter-spacing: -0.02em;
+}
+
+.markdown hr {
+  height: 2px;
+  border: 0;
+  background: var(--cv-gradient);
+  opacity: 0.6;
+}
+
+/* ------------------------------------------------------------------ */
+/* Sidebar — gradient pill for the active item                        */
+/* ------------------------------------------------------------------ */
+.menu__link {
+  border-radius: var(--ifm-global-radius);
+  font-weight: 500;
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background: var(--cv-gradient-soft);
+  font-weight: 600;
+  position: relative;
+}
+
+.menu__link--active:not(.menu__link--sublist)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 20%;
+  bottom: 20%;
+  width: 3px;
+  border-radius: 3px;
+  background: var(--cv-gradient);
+}
+
+.menu__list-item-collapsible:hover,
+.menu__link:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+/* ------------------------------------------------------------------ */
+/* Cards, code, tables                                                */
+/* ------------------------------------------------------------------ */
+.card {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--ifm-global-shadow-md);
+}
+
+div[class^='codeBlockContainer'] {
+  border-radius: var(--ifm-code-border-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+.markdown table {
+  border-radius: var(--ifm-global-radius);
+  overflow: hidden;
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+/* Screenshots in docs get a subtle frame */
+.markdown img {
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+  max-width: 100%;
+}
+
+/* ------------------------------------------------------------------ */
+/* Announcement bar — gradient tint                                   */
+/* ------------------------------------------------------------------ */
+div[class^='announcementBar'] {
+  background: var(--cv-gradient-soft);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  font-weight: 500;
+}
+
+/* Pagination (prev/next) cards */
+.pagination-nav__link {
+  border-radius: var(--ifm-global-radius);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: var(--ifm-global-shadow-lw);
 }
