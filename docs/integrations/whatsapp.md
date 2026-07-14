@@ -18,8 +18,12 @@ title: WhatsApp Webhook
 4. Subscribe to message:new.
 5. Click I have connected.
 
+![WhatsApp connection](/img/whatsapp.jpg)
+
 ## Validation
 
 - WhatsApp status changes to Connected.
 - Chats load in WhatsApp section.
 - New inbound and outbound messages appear.
+
+<img src="/img/whatsapp-after-connection.jpg" alt="After connection" width="200" />
