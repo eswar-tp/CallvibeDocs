@@ -4,32 +4,33 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import HomepageSections from '@site/src/components/HomepageSections';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+    <header className={styles.hero}>
+      <div className={clsx('container', styles.heroInner)}>
+        <span className={styles.eyebrow}>AI conversation intelligence</span>
+        <Heading as="h1" className={styles.heroTitle}>
+          Turn every call into{' '}
+          <span className="cv-gradient-text">actionable insight</span>
         </Heading>
-        <p className="hero__subtitle">
-          Build faster with integration guides, onboarding playbooks, and platform
-          documentation for CallVibe AI conversation intelligence.
+        <p className={styles.heroSubtitle}>
+          Integration guides, onboarding playbooks, and platform documentation
+          for CallVibe — capture calls and WhatsApp conversations, analyze them
+          with AI, and drive smarter follow-ups.
         </p>
         <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/quickstart">
-            Start with Quickstart
+          <Link className="button button--primary button--lg" to="/docs/quickstart">
+            Get started
           </Link>
           <Link
-            className="button button--outline button--lg margin-left--sm"
-            to="https://www.callvibe.ai/features/">
-            Explore Product Features
+            className="button button--secondary button--lg"
+            to="/docs/intro">
+            Browse the docs
           </Link>
         </div>
       </div>
@@ -46,6 +47,7 @@ export default function Home(): ReactNode {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <HomepageSections />
       </main>
     </Layout>
   );

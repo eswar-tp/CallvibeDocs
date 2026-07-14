@@ -3,14 +3,9 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /**
- * Creating a sidebar enables you to:
- - create an ordered group of docs
- - render a sidebar for each doc of that group
- - provide next/previous navigation
-
- The sidebars can be generated from the filesystem, or explicitly defined here.
-
- Create as many sidebars as you want.
+ * The sidebar is defined explicitly (not generated from the filesystem) so we
+ * control ordering. Each category has a `generated-index` link, which gives it
+ * a polished auto-generated landing page with card links to its docs.
  */
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
@@ -19,6 +14,13 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'User Guide',
+      link: {
+        type: 'generated-index',
+        title: 'User Guide',
+        description:
+          'Everything you need to sign in, navigate the platform, and run your day-to-day workflows in CallVibe.',
+        slug: '/category/user-guide',
+      },
       items: [
         'user-guide/account-and-access',
         'user-guide/platform-navigation',
@@ -28,6 +30,13 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Integrations',
+      link: {
+        type: 'generated-index',
+        title: 'Integrations',
+        description:
+          'Connect CallVibe to your telephony, call-tracking, messaging, and CRM tools. Follow the provider guide that matches your stack.',
+        slug: '/category/integrations',
+      },
       items: [
         'integrations/overview',
         'integrations/providers/salestrail',
@@ -50,6 +59,13 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Admin Guide',
+      link: {
+        type: 'generated-index',
+        title: 'Admin Guide',
+        description:
+          'Configure your workspace: team and roles, notifications, customer management, lead pipeline, AI insights, and usage limits.',
+        slug: '/category/admin',
+      },
       items: [
         'admin/settings-overview',
         'admin/team-management',
@@ -65,27 +81,28 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'API Reference',
+      link: {
+        type: 'generated-index',
+        title: 'API Reference',
+        description:
+          'Build on top of CallVibe: endpoint groups, authentication, and webhook patterns.',
+        slug: '/category/api',
+      },
       items: ['api/overview'],
     },
     {
       type: 'category',
       label: 'Troubleshooting',
+      link: {
+        type: 'generated-index',
+        title: 'Troubleshooting',
+        description:
+          'Fix common issues with workers, data flow, access, WhatsApp, and account recovery.',
+        slug: '/category/troubleshooting',
+      },
       items: ['troubleshooting/common-issues'],
     },
   ],
-
-  // But you can create a sidebar manually
-  /*
-  tutorialSidebar: [
-    'intro',
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-   */
 };
 
 export default sidebars;
