@@ -1,6 +1,7 @@
 ---
 sidebar_position: 8
 title: GHL CRM
+description: Connect GoHighLevel (GHL) CRM to CallVibe to sync leads as contacts, push call summaries to notes, and log action items as tasks automatically.
 ---
 
 # GHL CRM Integration
@@ -44,8 +45,12 @@ The GHL CRM integration connects CallVibe with your GoHighLevel account. It auto
 
 ## Validation
 
+:::tip
+
 - Card status shows Connected.
 - Worker remains running.
 - Call ingestion is visible in Calls.
+
+:::
 
 <img src="/img/ghl-after-connection.JPG" alt="After connection" width="200" />

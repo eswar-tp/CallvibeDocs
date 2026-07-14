@@ -1,6 +1,7 @@
 ---
 sidebar_position: 8
 title: RingCentral
+description: Connect RingCentral to CallVibe — register an app in the Developer Console, download the Credentials JSON for Client ID, Token, and JWT, then connect.
 ---
 
 # RingCentral Integration
@@ -38,8 +39,12 @@ title: RingCentral
 
 ## Validation
 
+:::tip
+
 - Card status shows Connected.
 - Worker remains running.
 - Call ingestion is visible in Calls.
+
+:::
 
 <img src="/img/ringcentral-after-connection.JPG" alt="After connection" width="200" />

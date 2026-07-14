@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Notifications
+description: Configure CallVibe notifications — connect Slack via OAuth and set up daily or weekly email digests with recipients, scope, timezone, and send time.
 ---
 
 # Notifications

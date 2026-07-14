@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Quickstart
+description: "Set up CallVibe fast: create your organization account, connect a telephony or WhatsApp integration, start the worker, and validate call data flow."
 ---
 
 # Quickstart
@@ -33,6 +34,12 @@ After credentials are saved:
 - Open Worker Status in Integrations
 - Click Start Worker
 - Confirm status changes to running
+
+:::tip
+
+The worker starts only when at least one provider is configured, so complete step 2 before starting it.
+
+:::
 
 ## 4. Validate Data Flow
 

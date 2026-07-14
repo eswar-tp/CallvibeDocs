@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 title: Marketing Sources
+description: Track lead origin in CallVibe without GHL — create and manage custom marketing source labels like Google Ads, Facebook, or Referral for leads.
 ---
 
 # Marketing Sources

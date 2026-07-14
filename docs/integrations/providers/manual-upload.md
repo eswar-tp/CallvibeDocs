@@ -1,6 +1,7 @@
 ---
 sidebar_position: 11
 title: Upload Center
+description: Import historical call recordings into CallVibe with Upload Center — single or bulk CSV upload runs audio through AI transcription and sentiment.
 ---
 
 # Upload Center Integration
@@ -42,6 +43,10 @@ Upload Center lets you import historical call recordings directly, without a tel
 
 ## Validation
 
+:::tip
+
 - Upload status changes to Analyzing, then Completed for each call.
 - Processed calls appear in Call Records.
 - Failed rows can be retried individually from the completed screen.
+
+:::

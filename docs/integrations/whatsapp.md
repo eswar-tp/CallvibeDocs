@@ -1,6 +1,8 @@
 ---
 sidebar_position: 7
 title: WhatsApp Webhook
+description: "Connect the CallVibe WhatsApp webhook: copy your tenant webhook URL, subscribe to message:new events, and confirm chats and messages sync."
+sidebar_label: WhatsApp
 ---
 
 # WhatsApp Webhook Integration
@@ -22,8 +24,12 @@ title: WhatsApp Webhook
 
 ## Validation
 
+:::tip
+
 - WhatsApp status changes to Connected.
 - Chats load in WhatsApp section.
 - New inbound and outbound messages appear.
+
+:::
 
 <img src="/img/whatsapp-after-connection.jpg" alt="After connection" width="200" />

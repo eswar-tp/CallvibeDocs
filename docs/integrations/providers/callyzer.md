@@ -1,6 +1,7 @@
 ---
 sidebar_position: 9
 title: Callyzer
+description: Connect Callyzer to CallVibe — generate an API Access Key from Connectors → API & Webhook, save it, start the worker, and validate call ingestion.
 ---
 
 # Callyzer Integration
@@ -30,8 +31,12 @@ title: Callyzer
 
 ## Validation
 
+:::tip
+
 - Callyzer status shows Connected.
 - Worker remains running.
 - Call ingestion is visible in Calls.
+
+:::
 
 <img src="/img/callyzer-after-connection.jpg" alt="After connection" width="200" />

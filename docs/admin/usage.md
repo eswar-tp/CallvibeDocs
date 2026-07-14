@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Usage & Limits
+description: Track CallVibe AI processing minutes — monitor wallet balance, allocated and consumed minutes, top-ups, and low-balance or exhausted plan banners.
 ---
 
 # Usage & Limits

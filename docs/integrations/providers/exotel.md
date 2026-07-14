@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 title: Exotel
+description: Connect Exotel cloud telephony to CallVibe — get your API credentials, configure the integration, and validate that calls are flowing.
 ---
 
 # Exotel Integration
@@ -26,8 +27,12 @@ title: Exotel
 
 ## Validation
 
+:::tip
+
 - Exotel card shows Connected.
 - Worker does not show Exotel error.
 - Calls appear in Calls and Analytics.
+
+:::
 
 <img src="/img/exotel-connected.JPG" alt="After connection" width="200" />

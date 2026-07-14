@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 title: Smartflo
+description: Connect Smartflo (Tata Tele) to CallVibe — generate an API token from API Connect, save it as your API key, start the worker, and validate calls.
 ---
 
 # Smartflo Integration
@@ -31,8 +32,12 @@ title: Smartflo
 
 ## Validation
 
+:::tip
+
 - Status changes to Connected.
 - Worker remains healthy.
 - Recent records are imported.
+
+:::
 
 <img src="/img/smartflo-connected.JPG" alt="After connection" width="200" />

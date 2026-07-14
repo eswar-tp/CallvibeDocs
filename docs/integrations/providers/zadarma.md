@@ -1,6 +1,7 @@
 ---
 sidebar_position: 7
 title: Zadarma
+description: Connect Zadarma to CallVibe — request API access, confirm by email to reveal your API key and secret, save them, and validate calls appear.
 ---
 
 # Zadarma Integration
@@ -35,8 +36,12 @@ title: Zadarma
 
 ## Validation
 
+:::tip
+
 - Card status shows Connected.
 - Worker remains running.
 - Call ingestion is visible in Calls.
+
+:::
 
 <img src="/img/zadarma-after-connection.JPG" alt="After connection" width="200" />

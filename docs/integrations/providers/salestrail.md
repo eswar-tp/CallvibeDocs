@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: SalesTrail
+description: Connect SalesTrail Call Analytics to CallVibe — generate Pull API credentials, Base64-encode username:password, save the API key, and validate calls.
 ---
 
 # SalesTrail Integration
@@ -31,8 +32,12 @@ title: SalesTrail
 
 ## Validation
 
+:::tip
+
 - Integration status shows Connected.
 - Worker runs without provider error.
 - New calls appear in Calls view.
+
+:::
 
 <img src="/img/salestrail-connected.JPG" alt="After connection" width="200" />

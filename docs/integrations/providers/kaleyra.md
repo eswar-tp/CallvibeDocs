@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 title: Kaleyra
+description: Connect Kaleyra Voice to CallVibe — create an API key from Developers → APIs, receive it by email, save it in CallVibe, and validate calls.
 ---
 
 # Kaleyra Integration
@@ -32,8 +33,12 @@ title: Kaleyra
 
 ## Validation
 
+:::tip
+
 - Card status shows Connected.
 - Worker remains running.
 - Call ingestion is visible in Calls.
+
+:::
 
 <img src="/img/kaleyra-after-connection.JPG" alt="After connection" width="200" />
