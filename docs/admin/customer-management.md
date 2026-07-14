@@ -7,6 +7,8 @@ title: Customer Management
 
 Use this section to control how customer numbers are treated in analytics.
 
+![Customer Management page](/img/customer-management.jpg)
+
 ## Available Tags
 
 - Internal User

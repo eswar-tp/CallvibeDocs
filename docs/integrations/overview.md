@@ -7,6 +7,8 @@ title: Integrations Overview
 
 CallVibe supports tenant-scoped vendor integrations with centralized worker orchestration.
 
+![Integrations overview page](/img/integrations-overview.jpg)
+
 ## Setup Sequence
 
 1. Open Settings > Integrations.
