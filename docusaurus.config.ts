@@ -80,10 +80,11 @@ const config: Config = {
       isCloseable: true,
     },
     navbar: {
+      title: 'CallVibe',
       logo: {
         alt: 'CallVibe Logo',
-        src: 'img/logo.webp',
-        srcDark: 'img/logo.webp',
+        src: 'img/logo-icon.webp',
+        srcDark: 'img/logo-icon.webp',
       },
       items: [
         {
