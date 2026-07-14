@@ -67,23 +67,42 @@ function RolePaths(): ReactNode {
 /* Integrations grid                                                   */
 /* ------------------------------------------------------------------ */
 type Integration = { name: string; to: string };
+type IntegrationGroup = { label: string; to: string; items: Integration[] };
 
-const integrations: Integration[] = [
-  { name: 'SalesTrail', to: '/docs/integrations/providers/salestrail' },
-  { name: 'MobileCRM', to: '/docs/integrations/providers/mobilecrm' },
-  { name: 'Smartflo', to: '/docs/integrations/providers/smartflo' },
-  { name: 'Exotel', to: '/docs/integrations/providers/exotel' },
-  { name: 'Kaleyra', to: '/docs/integrations/providers/kaleyra' },
-  { name: '8x8', to: '/docs/integrations/providers/8x8' },
-  { name: 'Zadarma', to: '/docs/integrations/providers/zadarma' },
-  { name: 'RingCentral', to: '/docs/integrations/providers/ringcentral' },
-  { name: 'Callyzer', to: '/docs/integrations/providers/callyzer' },
-  { name: 'Bonvoice', to: '/docs/integrations/providers/bonvoice' },
-  { name: 'Zoom Phone', to: '/docs/integrations/providers/zoom-phone' },
-  { name: 'Upload Center', to: '/docs/integrations/providers/manual-upload' },
-  { name: 'WhatsApp', to: '/docs/integrations/whatsapp' },
-  { name: 'GoHighLevel', to: '/docs/integrations/crm/ghl' },
-  { name: 'LeadSquared', to: '/docs/integrations/crm/leadsquared' },
+const integrationGroups: IntegrationGroup[] = [
+  {
+    label: 'Telephony',
+    to: '/docs/category/telephony',
+    items: [
+      { name: 'SalesTrail', to: '/docs/integrations/providers/salestrail' },
+      { name: 'MobileCRM', to: '/docs/integrations/providers/mobilecrm' },
+      { name: 'Smartflo', to: '/docs/integrations/providers/smartflo' },
+      { name: 'Exotel', to: '/docs/integrations/providers/exotel' },
+      { name: 'Kaleyra', to: '/docs/integrations/providers/kaleyra' },
+      { name: '8x8', to: '/docs/integrations/providers/8x8' },
+      { name: 'Zadarma', to: '/docs/integrations/providers/zadarma' },
+      { name: 'RingCentral', to: '/docs/integrations/providers/ringcentral' },
+      { name: 'Callyzer', to: '/docs/integrations/providers/callyzer' },
+      { name: 'Bonvoice', to: '/docs/integrations/providers/bonvoice' },
+      { name: 'Zoom Phone', to: '/docs/integrations/providers/zoom-phone' },
+    ],
+  },
+  {
+    label: 'CRM',
+    to: '/docs/category/crm',
+    items: [
+      { name: 'GoHighLevel', to: '/docs/integrations/crm/ghl' },
+      { name: 'LeadSquared', to: '/docs/integrations/crm/leadsquared' },
+    ],
+  },
+  {
+    label: 'Messaging & Upload',
+    to: '/docs/integrations/overview',
+    items: [
+      { name: 'WhatsApp', to: '/docs/integrations/whatsapp' },
+      { name: 'Upload Center', to: '/docs/integrations/providers/manual-upload' },
+    ],
+  },
 ];
 
 function IntegrationsGrid(): ReactNode {
@@ -96,11 +115,20 @@ function IntegrationsGrid(): ReactNode {
             CallVibe captures calls and messages from the tools you already use.
           </p>
         </div>
-        <div className={styles.pillGrid}>
-          {integrations.map((i) => (
-            <Link key={i.name} to={i.to} className={styles.pill}>
-              {i.name}
-            </Link>
+        <div className={styles.integrationGroups}>
+          {integrationGroups.map((group) => (
+            <div key={group.label} className={styles.integrationGroup}>
+              <Link to={group.to} className={styles.groupLabel}>
+                {group.label}
+              </Link>
+              <div className={styles.pillGrid}>
+                {group.items.map((i) => (
+                  <Link key={i.name} to={i.to} className={styles.pill}>
+                    {i.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
         <div className={styles.centerLink}>

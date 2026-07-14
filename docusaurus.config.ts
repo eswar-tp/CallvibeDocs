@@ -104,9 +104,13 @@ const config: Config = {
           position: 'left',
           items: [
             { to: '/docs/integrations/overview', label: 'Overview' },
+            { to: '/docs/category/telephony', label: 'Telephony' },
+            { to: '/docs/category/crm', label: 'CRM' },
             { to: '/docs/integrations/whatsapp', label: 'WhatsApp' },
-            { to: '/docs/integrations/crm/ghl', label: 'GoHighLevel' },
-            { to: '/docs/integrations/crm/leadsquared', label: 'LeadSquared' },
+            {
+              to: '/docs/integrations/providers/manual-upload',
+              label: 'Upload Center',
+            },
           ],
         },
         {

@@ -62,6 +62,35 @@
 }
 
 /* Integration pills ------------------------------------------------- */
+.integrationGroups {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.integrationGroup {
+  text-align: center;
+}
+
+.groupLabel {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ifm-color-emphasis-600);
+  text-decoration: none;
+}
+
+.groupLabel:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
 .pillGrid {
   display: flex;
   flex-wrap: wrap;
