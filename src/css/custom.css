@@ -128,9 +128,24 @@
 /* ------------------------------------------------------------------ */
 /* Navbar — frosted glass with a gradient underline                   */
 /* ------------------------------------------------------------------ */
-.navbar {
-  backdrop-filter: saturate(180%) blur(12px);
-  -webkit-backdrop-filter: saturate(180%) blur(12px);
+/*
+ * Apply the frosted-glass blur on desktop only. `backdrop-filter` turns
+ * `.navbar` into the containing block for its `position: fixed` descendants,
+ * which would collapse the mobile drawer (`.navbar-sidebar`) to the navbar's
+ * height instead of the full viewport. Below the mobile breakpoint there is
+ * no blur, so the drawer positions against the viewport as intended.
+ */
+@media (min-width: 997px) {
+  .navbar {
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+  }
+}
+
+/* Mobile slide-out drawer needs a solid background (the navbar background is
+   intentionally semi-transparent for the desktop frosted effect). */
+.navbar-sidebar {
+  background-color: var(--ifm-background-surface-color);
 }
 
 .navbar::after {
