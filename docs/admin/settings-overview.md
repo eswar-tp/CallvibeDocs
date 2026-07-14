@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Settings
+description: Configure your CallVibe tenant from Settings — integrations, notifications, customer management, AI insights, lead statuses, fields, and usage limits.
 ---
 
 # Settings

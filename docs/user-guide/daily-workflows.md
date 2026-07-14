@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 title: Daily Workflows
+description: Daily CallVibe workflows for sales managers, team leads, and admins — reviewing dashboards, call summaries, analytics, action items, and worker health.
 ---
 
 # Daily Workflows

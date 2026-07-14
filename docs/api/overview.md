@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: API Overview
+description: Explore the CallVibe API — endpoint groups for auth, calls, customers, analytics, tenant settings, team, WhatsApp, and tenant-scoped webhooks.
 ---
 
 # API Overview

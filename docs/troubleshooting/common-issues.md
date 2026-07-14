@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Common Issues
+description: Fix common CallVibe issues — worker not starting, no calls visible, agent access problems, missing WhatsApp messages, and password reset errors.
 ---
 
 # Common Issues

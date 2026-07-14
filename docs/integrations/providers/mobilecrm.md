@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 title: MobileCRM
+description: Connect MobileCRM to CallVibe — enter your API key, click Connect, start the worker, and confirm call ingestion appears in the Calls view.
 ---
 
 # MobileCRM Integration
@@ -23,8 +24,12 @@ title: MobileCRM
 
 ## Validation
 
+:::tip
+
 - MobileCRM status shows Connected.
 - Worker remains running.
 - Call ingestion is visible in Calls.
+
+:::
 
 <img src="/img/mobile-crm-after-connection.jpg" alt="After connection" width="200" />

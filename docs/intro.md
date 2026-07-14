@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Welcome
+description: CallVibe documentation hub for onboarding users, connecting call and WhatsApp integrations, configuring admin settings, and troubleshooting operations.
 ---
 
 # CallVibe Documentation

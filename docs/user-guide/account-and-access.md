@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Account and Access
+description: "Manage CallVibe accounts and access: organization signup, email login, password recovery, invitation-based team signup, and owner or agent roles."
 ---
 
 # Account and Access

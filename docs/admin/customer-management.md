@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 title: Customer Management
+description: Control how customer numbers appear in CallVibe analytics — tag Internal User, Key Customer, or Top Priority Lead and toggle internal visibility.
 ---
 
 # Customer Management

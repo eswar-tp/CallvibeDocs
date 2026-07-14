@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 title: AI Insights
+description: Configure CallVibe AI Insights — system and custom insights, field types, scoring, and industry templates to extract signals from every call.
 ---
 
 # AI Insights

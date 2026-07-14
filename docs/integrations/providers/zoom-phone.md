@@ -1,6 +1,7 @@
 ---
 sidebar_position: 12
 title: Zoom Phone
+description: Connect Zoom Phone to CallVibe — create a Marketplace app, add call-log and recording scopes, copy Account, Client ID, and Secret, then connect.
 ---
 
 # Zoom Phone Integration
@@ -38,8 +39,12 @@ title: Zoom Phone
 
 ## Validation
 
+:::tip
+
 - Zoom Phone status shows Connected.
 - Worker remains running.
 - Call ingestion is visible in Calls.
+
+:::
 
 <img src="/img/zoom-phone-after-connection.jpg" alt="After connection" width="200" />

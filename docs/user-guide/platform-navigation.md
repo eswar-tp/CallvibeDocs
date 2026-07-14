@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Platform Navigation
+description: "Navigate CallVibe: the Main and Administration sidebars covering Dashboard, Calls, WhatsApp, Customers, Analytics, Action Items, and route references."
 ---
 
 # Platform Navigation

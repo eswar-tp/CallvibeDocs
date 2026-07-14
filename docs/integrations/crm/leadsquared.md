@@ -1,6 +1,7 @@
 ---
 sidebar_position: 9
 title: LeadSquared CRM
+description: Connect LeadSquared CRM to CallVibe — generate Admin Access and Secret keys, select your regional API host, then connect and start the worker.
 ---
 
 # LeadSquared CRM Integration
@@ -34,8 +35,12 @@ title: LeadSquared CRM
 
 ## Validation
 
+:::tip
+
 - Card status shows Connected.
 - Worker remains running.
 - Call ingestion is visible in Calls.
+
+:::
 
 <img src="/img/lead-squared-after-connection.jpg" alt="After connection" width="200" />

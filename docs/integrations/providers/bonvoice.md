@@ -1,6 +1,7 @@
 ---
 sidebar_position: 10
 title: Bonvoice
+description: Connect Bonvoice cloud telephony to CallVibe — generate an API token in Developer Settings, save it, start the worker, and validate call ingestion.
 ---
 
 # Bonvoice Integration
@@ -31,8 +32,12 @@ title: Bonvoice
 
 ## Validation
 
+:::tip
+
 - Bonvoice status shows Connected.
 - Worker remains running.
 - Call ingestion is visible in Calls.
+
+:::
 
 <img src="/img/bonvoice-after-connection.jpg" alt="After connection" width="200" />

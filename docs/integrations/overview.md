@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Integrations Overview
+description: "Set up CallVibe integrations: add SalesTrail, Exotel, Smartflo, Kaleyra, 8x8, WhatsApp, and GHL credentials, then start the worker to ingest calls."
 ---
 
 # Integrations Overview
@@ -34,14 +35,22 @@ CallVibe supports tenant-scoped vendor integrations with centralized worker orch
 
 ## Worker Behavior
 
+:::info
+
 - Worker starts only when at least one provider is configured.
 - Status values include running, starting, stopped, and error.
 - Error messages are displayed in the Integrations UI.
 
+:::
+
 ## Security Notes
+
+:::warning
 
 - Credentials are stored per tenant.
 - Use least-privilege API keys.
 - Rotate secrets periodically.
+
+:::
 
 Continue with provider guides in this section.

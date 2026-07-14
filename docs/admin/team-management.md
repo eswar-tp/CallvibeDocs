@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Team Management
+description: Manage your CallVibe team — invite members, assign owner or agent roles, map agent names for scoped visibility, and remove stale users and invites.
 ---
 
 # Team Management
