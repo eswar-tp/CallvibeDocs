@@ -39,9 +39,13 @@ The GHL CRM integration connects CallVibe with your GoHighLevel account. It auto
 4. Click Connect.
 5. Start worker.
 
-![Settings page](/img/settings.JPG)
+<ThemedScreenshot alt="Settings page" light="/img/settings-light.JPG" dark="/img/settings-dark.JPG" />
 
-![GHL connection](/img/GHL.JPG)
+<ThemedScreenshot
+  alt="GHL connection"
+  light="/img/GHL-light.JPG"
+  dark="/img/GHL-dark.JPG"
+/>
 
 ## Validation
 
@@ -53,4 +57,9 @@ The GHL CRM integration connects CallVibe with your GoHighLevel account. It auto
 
 :::
 
-<img src="/img/ghl-after-connection.JPG" alt="After connection" width="200" />
+<ThemedScreenshot
+  alt="After connection"
+  light="/img/ghl-after-connection-light.JPG"
+  dark="/img/ghl-after-connection-dark.JPG"
+  width={200}
+/>

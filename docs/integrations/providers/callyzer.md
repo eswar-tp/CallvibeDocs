@@ -25,9 +25,13 @@ description: Connect Callyzer to CallVibe — generate an API Access Key from Co
 4. Click Connect.
 5. Start worker.
 
-![Settings page](/img/settings.JPG)
+<ThemedScreenshot alt="Settings page" light="/img/settings-light.JPG" dark="/img/settings-dark.JPG" />
 
-![Callyzer connection](/img/callyzer.jpg)
+<ThemedScreenshot
+  alt="Callyzer connection"
+  light="/img/callyzer-light.jpg"
+  dark="/img/callyzer-dark.jpg"
+/>
 
 ## Validation
 
@@ -36,7 +40,13 @@ description: Connect Callyzer to CallVibe — generate an API Access Key from Co
 - Callyzer status shows Connected.
 - Worker remains running.
 - Call ingestion is visible in Calls.
+- The Data health panel shows this provider as Receiving. A Connected card only means credentials are saved. See [Data Health](../overview.mdx#data-health).
 
 :::
 
-<img src="/img/callyzer-after-connection.jpg" alt="After connection" width="200" />
+<ThemedScreenshot
+  alt="After connection"
+  light="/img/callyzer-after-connection-light.jpg"
+  dark="/img/callyzer-after-connection-dark.jpg"
+  width={200}
+/>

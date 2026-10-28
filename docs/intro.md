@@ -20,7 +20,7 @@ Use this portal to:
 
 1. Start with [Quickstart](./quickstart.md)
 2. Continue with [Account and Access](./user-guide/account-and-access.md)
-3. Set up providers from [Integrations Overview](./integrations/overview.md)
+3. Set up providers from [Integrations Overview](./integrations/overview.mdx)
 4. Review [Troubleshooting](./troubleshooting/common-issues.md)
 
 ## Scope

@@ -1,54 +1,72 @@
-﻿---
+---
 sidebar_position: 5
 title: Lead Statuses
-description: Define CallVibe lead pipeline stages — use recommended stages or build custom statuses that the AI assigns after each call and agents can override.
+description: Define CallVibe lead pipeline stages — use the recommended stages or create your own, with AI and human status tracked separately on each contact.
 ---
 
 # Lead Statuses
 
-Lead Statuses define the stages in your sales pipeline. After every call, the AI automatically sets the contact status based on the transcript. Agents can manually override it at any time.
+Lead Statuses are the stages in your sales pipeline. Open them from Settings > Lead statuses. The order here is the order shown in the pipeline view.
 
-## Smart Setup
+After calls, the AI sets a status for each contact based on the call history. Your team can set their own status too.
 
-If your pipeline is empty, CallVibe offers a Recommended Stages panel with 6 pre-built stages:
+## Recommended Stages
 
-- **0 — New / Cold:** Raw inbound lead, no contact attempted yet
-- **1 — Attempting Contact:** Outreach started but no two-way conversation yet
-- **2 — Connected / Warm:** Active conversation in progress
-- **3 — Qualified:** Customer expressed interest; needs follow-up or demo
-- **4 — Nurturing:** Not ready now; check back in 3–6 months
-- **5 — Unqualified / Dead:** Not a fit — no budget, wrong industry, or opted out
+If your pipeline is empty, CallVibe offers a Recommended pipeline stages panel with 6 ready-made stages:
 
-Select all, pick a subset, or dismiss the panel and build from scratch.
+- **0. New / Cold:** Raw inbound lead or cold prospect. No contact attempted yet.
+- **1. Attempting Contact:** Outreach has started, but no two-way conversation yet.
+- **2. Connected / Warm:** Active conversation in progress.
+- **3. Qualified:** Customer expressed interest. Needs follow-up or a demo.
+- **4. Nurturing:** Not ready to buy now. Check back in 3-6 months.
+- **5. Unqualified / Dead:** Not a fit, for example no budget, wrong industry, or opted out.
 
-![Settings page](/img/lead-statuses.JPG)
+All six are ticked by default. Untick the ones you don't want, then click **Add stages**. Stages you already have are marked as added. You can also dismiss the panel and build your own.
+
+<ThemedScreenshot
+  alt="Recommended pipeline stages"
+  light="/img/lead-statuses-light.JPG"
+  dark="/img/lead-statuses-dark.JPG"
+/>
 
 ## Fields
 
-- **Status Name:** Label displayed on leads (e.g., "Qualified")
-- **Color:** Color dot shown in the pipeline and lead list
-- **Position:** Numeric order in the pipeline (lower = earlier stage)
-- **Description:** Helps AI understand when to apply this status and helps the AI classify leads accurately
+- **Status name:** The label shown on contacts, for example "Qualified".
+- **Colour:** A colour shown next to the name in the pipeline and contact list.
+- **Position:** The order in the pipeline. Lower numbers come first.
+- **Description:** Tells the AI when to use this status, so it classifies contacts accurately.
 
-## AI vs Agent Assignment
+## AI and Human Status
 
-- **AI:** Sets status automatically after each call based on the transcript
-- **Agent:** Can override status from the lead table by clicking on a lead, or from the Pipeline view in Contacts
+Each contact has two statuses, shown side by side in the contact details:
 
-Manual overrides are respected on subsequent calls unless the AI detects a significant stage change.
+- **AI:** Set by the AI from the call history. You can see why it chose that status.
+- **Human:** Set by your team. Change it from the contact details.
 
 ## Manage Lead Statuses
 
 ### Add a Status
-1. Open Settings > Lead Statuses.
-2. Click Add Stage or use the Smart Setup panel.
-3. Enter a name, pick a color, and set the position.
-4. Click Save.
 
-![Settings page](/img/lead-settings.JPG)
+1. Open Settings > Lead statuses.
+2. Click Add status.
+3. Enter a name, pick a colour, and set the position.
+4. Add a description to help the AI.
+5. Click Create status.
+
+<ThemedScreenshot
+  alt="New pipeline stage form"
+  light="/img/lead-settings-light.JPG"
+  dark="/img/lead-settings-dark.JPG"
+/>
 
 ### Edit a Status
-Click the pencil icon next to any status, modify the fields, and save.
+
+Click the pencil icon next to a status, change the fields, and click Save changes.
+
+### Reorder Statuses
+
+Use the Move up and Move down buttons on a status, or drag it into place.
 
 ### Delete a Status
-Click the trash icon and confirm. Leads already holding that status keep the label; new leads will no longer be assigned to it.
+
+Click the trash icon and confirm. Contacts already in that stage keep the status. New contacts won't be assigned to it.

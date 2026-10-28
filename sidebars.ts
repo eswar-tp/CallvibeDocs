@@ -24,6 +24,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'user-guide/account-and-access',
         'user-guide/platform-navigation',
+        'user-guide/outlook',
         'user-guide/daily-workflows',
       ],
     },
@@ -51,7 +52,6 @@ const sidebars: SidebarsConfig = {
           },
           items: [
             'integrations/providers/salestrail',
-            'integrations/providers/mobilecrm',
             'integrations/providers/smartflo',
             'integrations/providers/exotel',
             'integrations/providers/kaleyra',
