@@ -1,0 +1,138 @@
+---
+sidebar_position: 1
+title: Integrations Overview
+description: "Set up CallVibe integrations: connect telephony providers, WhatsApp, and CRMs such as GHL and LeadSquared, check Data health, and start the worker to ingest calls."
+---
+
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+# Integrations Overview
+
+CallVibe supports tenant-scoped vendor integrations with centralized worker orchestration.
+
+<ThemedImage
+  alt="Integrations overview page"
+  sources={{
+    light: useBaseUrl('/img/integrations-overview-light.png'),
+    dark: useBaseUrl('/img/integrations-overview-dark.png'),
+  }}
+/>
+
+## Setup Sequence
+
+1. Open Settings > Integrations.
+2. Add provider credentials.
+3. Save and verify provider status.
+4. Start worker.
+5. Open the Data health panel at the top of the page and select **Check again** to confirm calls are arriving.
+6. Validate calls appear in Calls and Overview.
+
+## Data Health
+
+The **Data health** panel sits at the top of Settings > Integrations. It answers one question: *are your calls actually reaching CallVibe?*
+
+A provider card showing **Connected** only means credentials are saved. Data health reports what CallVibe has actually received, per provider.
+
+<ThemedImage
+  alt="Data health panel on the Integrations page"
+  sources={{
+    light: useBaseUrl('/img/integrations-data-health-light.png'),
+    dark: useBaseUrl('/img/integrations-data-health-dark.png'),
+  }}
+/>
+
+### Header status
+
+The same verdict appears as a status pill in the top bar on every page. Selecting it opens Integrations (or Team & access for **Account not linked**).
+
+| Panel state | Top bar pill | Meaning | Colour |
+| --- | --- | --- | --- |
+| Receiving calls | Receiving calls | Calls arrived within the expected window. | Green |
+| Quiet | No recent calls | Gap is explained by closed hours or a normal lull. | Grey |
+| Nothing is arriving | Not receiving calls | Business has been open for hours and nothing came in. | Red |
+| No calls yet | Waiting for first call | No call has ever arrived. Finish setup. | Amber |
+| Account not linked | Account not linked | Your login is not mapped to an agent, so your views show nothing. Ask an admin to link it in Team & access. | Amber |
+
+Only **Nothing is arriving** is an alarm. The other states are setup facts or normal quiet periods.
+
+### What the panel shows
+
+- **Status banner**: the current state, the last call time, and a plain-language reason.
+- **Counts**: calls today, last 7 days, last 30 days, and *Analysed, 7 days*. The last one is the share of recent calls the AI has scored. Sentiment, category, and quality figures elsewhere are based on that subset. A warning appears when coverage is below 60%.
+- **By provider**: one row per provider with its setup status, last call, and calls in the last 7 days.
+- **Pushed events**: shown when you receive webhooks. Counts of Processed, Pending, Needs metadata, and Failed events. Events that need metadata are held, not lost, and are matched once the missing agent or number detail arrives.
+- **Fetching worker**: current worker status. An unknown status is not a fault. Push-only accounts never need a worker.
+- **Check again**: re-runs the check. The panel also refreshes on its own.
+
+### Provider row statuses
+
+| Status | Meaning |
+| --- | --- |
+| Receiving | Calls from this provider arrived in the last 7 days. |
+| Waiting for first event | Switched on, but no call has ever arrived. Check it is enabled at the provider end. |
+| No calls in 7 days | Delivered before, but nothing in the last week. |
+| Setup incomplete | Saved without a credential, so nothing can be fetched or accepted. |
+| Switched off | Configured but not active. |
+| Not in settings | Calls arrive tagged with this provider, but it has no entry in your integration settings. |
+| Not checked | Too many calls in 7 days to break down per provider. |
+
+### How freshness is judged
+
+Freshness is measured in business-open hours, not wall-clock hours, so a weekend does not trigger a false alarm.
+
+- Calls within the expected window (6 hours while open, otherwise 24 hours): **Receiving**.
+- Fewer than 6 open hours since the last call: **Quiet**.
+- More than 24 hours since the last call: **Nothing is arriving**.
+- Otherwise: **Quiet**.
+
+Opening hours come from your settings. Without them, CallVibe assumes Mon-Fri, 9am-6pm, and the panel footer says so.
+
+:::tip
+
+If a figure shows a dash, CallVibe could not check it. A dash never means zero.
+
+:::
+
+## Supported Providers
+
+- SalesTrail: API key
+- Smartflo: API key
+- Exotel: API key, API token, account SID, region
+- Kaleyra: API key
+- 8x8: API key, username, password, API secret
+- Zadarma: API key, API secret
+- RingCentral: Client ID, Client Token, JWT Token
+- Callyzer: API access key
+- Bonvoice: API token
+- Zoom Phone: Account ID, Client ID, Client secret
+- WhatsApp: webhook URL and message:new events
+- Incoming webhook: a webhook secret, to send calls from any phone system. See the [API Overview](../api/overview.md#push-calls-webhook)
+- Upload Center: nothing to connect. See [Upload Center](./providers/manual-upload.md)
+
+## Supported CRMs
+
+- GHL CRM: Location ID, Private Integration Token
+- LeadSquared: Access key, Secret key, region
+
+## Worker Behavior
+
+:::info
+
+- Worker starts only when at least one provider is configured.
+- Status values include running, starting, stopped, and error.
+- Error messages are displayed in the Integrations UI.
+
+:::
+
+## Security Notes
+
+:::warning
+
+- Credentials are stored per tenant.
+- Use least-privilege API keys.
+- Rotate secrets periodically.
+
+:::
+
+Continue with provider guides in this section.

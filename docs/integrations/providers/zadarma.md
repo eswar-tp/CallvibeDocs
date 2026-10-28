@@ -30,9 +30,13 @@ description: Connect Zadarma to CallVibe — request API access, confirm by emai
 4. Click Connect.
 5. Start worker.
 
-![Settings page](/img/settings.JPG)
+<ThemedScreenshot alt="Settings page" light="/img/settings-light.JPG" dark="/img/settings-dark.JPG" />
 
-![Zadarma connection](/img/zadarma.JPG)
+<ThemedScreenshot
+  alt="Zadarma connection"
+  light="/img/zadarma-light.JPG"
+  dark="/img/zadarma-dark.JPG"
+/>
 
 ## Validation
 
@@ -41,7 +45,13 @@ description: Connect Zadarma to CallVibe — request API access, confirm by emai
 - Card status shows Connected.
 - Worker remains running.
 - Call ingestion is visible in Calls.
+- The Data health panel shows this provider as Receiving. A Connected card only means credentials are saved. See [Data Health](../overview.mdx#data-health).
 
 :::
 
-<img src="/img/zadarma-after-connection.JPG" alt="After connection" width="200" />
+<ThemedScreenshot
+  alt="After connection"
+  light="/img/zadarma-after-connection-light.JPG"
+  dark="/img/zadarma-after-connection-dark.JPG"
+  width={200}
+/>

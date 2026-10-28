@@ -29,9 +29,13 @@ description: Connect LeadSquared CRM to CallVibe — generate Admin Access and S
 5. Click Connect.
 6. Start worker.
 
-![Settings page](/img/settings.JPG)
+<ThemedScreenshot alt="Settings page" light="/img/settings-light.JPG" dark="/img/settings-dark.JPG" />
 
-![LeadSquared connection](/img/lead-squared.jpg)
+<ThemedScreenshot
+  alt="LeadSquared connection"
+  light="/img/lead-squared-light.jpg"
+  dark="/img/lead-squared-dark.jpg"
+/>
 
 ## Validation
 
@@ -43,4 +47,9 @@ description: Connect LeadSquared CRM to CallVibe — generate Admin Access and S
 
 :::
 
-<img src="/img/lead-squared-after-connection.jpg" alt="After connection" width="200" />
+<ThemedScreenshot
+  alt="After connection"
+  light="/img/lead-squared-after-connection-light.jpg"
+  dark="/img/lead-squared-after-connection-dark.jpg"
+  width={200}
+/>

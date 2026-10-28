@@ -27,9 +27,13 @@ description: Connect Kaleyra Voice to CallVibe — create an API key from Develo
 4. Click Connect.
 5. Start worker.
 
-![Settings page](/img/settings.JPG)
+<ThemedScreenshot alt="Settings page" light="/img/settings-light.JPG" dark="/img/settings-dark.JPG" />
 
-![Kaleyra connection](/img/kaleyra2.JPG)
+<ThemedScreenshot
+  alt="Kaleyra connection"
+  light="/img/kaleyra2-light.JPG"
+  dark="/img/kaleyra2-dark.JPG"
+/>
 
 ## Validation
 
@@ -38,7 +42,13 @@ description: Connect Kaleyra Voice to CallVibe — create an API key from Develo
 - Card status shows Connected.
 - Worker remains running.
 - Call ingestion is visible in Calls.
+- The Data health panel shows this provider as Receiving. A Connected card only means credentials are saved. See [Data Health](../overview.mdx#data-health).
 
 :::
 
-<img src="/img/kaleyra-after-connection.JPG" alt="After connection" width="200" />
+<ThemedScreenshot
+  alt="After connection"
+  light="/img/kaleyra-after-connection-light.JPG"
+  dark="/img/kaleyra-after-connection-dark.JPG"
+  width={200}
+/>

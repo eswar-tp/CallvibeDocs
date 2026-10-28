@@ -75,7 +75,6 @@ const integrationGroups: IntegrationGroup[] = [
     to: '/docs/category/telephony',
     items: [
       { name: 'SalesTrail', to: '/docs/integrations/providers/salestrail' },
-      { name: 'MobileCRM', to: '/docs/integrations/providers/mobilecrm' },
       { name: 'Smartflo', to: '/docs/integrations/providers/smartflo' },
       { name: 'Exotel', to: '/docs/integrations/providers/exotel' },
       { name: 'Kaleyra', to: '/docs/integrations/providers/kaleyra' },

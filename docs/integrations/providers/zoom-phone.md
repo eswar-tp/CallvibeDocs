@@ -33,9 +33,13 @@ description: Connect Zoom Phone to CallVibe — create a Marketplace app, add ca
 4. Click Connect.
 5. Start worker.
 
-![Settings page](/img/settings.JPG)
+<ThemedScreenshot alt="Settings page" light="/img/settings-light.JPG" dark="/img/settings-dark.JPG" />
 
-![Zoom Phone connection](/img/zoom-phone.jpg)
+<ThemedScreenshot
+  alt="Zoom Phone connection"
+  light="/img/zoom-phone-light.jpg"
+  dark="/img/zoom-phone-dark.jpg"
+/>
 
 ## Validation
 
@@ -44,7 +48,13 @@ description: Connect Zoom Phone to CallVibe — create a Marketplace app, add ca
 - Zoom Phone status shows Connected.
 - Worker remains running.
 - Call ingestion is visible in Calls.
+- The Data health panel shows this provider as Receiving. A Connected card only means credentials are saved. See [Data Health](../overview.mdx#data-health).
 
 :::
 
-<img src="/img/zoom-phone-after-connection.jpg" alt="After connection" width="200" />
+<ThemedScreenshot
+  alt="After connection"
+  light="/img/zoom-phone-after-connection-light.jpg"
+  dark="/img/zoom-phone-after-connection-dark.jpg"
+  width={200}
+/>

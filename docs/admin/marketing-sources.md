@@ -1,26 +1,39 @@
 ---
 sidebar_position: 3
 title: Marketing Sources
-description: Track lead origin in CallVibe without GHL — create and manage custom marketing source labels like Google Ads, Facebook, or Referral for leads.
+description: Track where calls come from in CallVibe without GoHighLevel — create and manage custom marketing source labels like Google Ads, Facebook, or Walk-in.
 ---
 
 # Marketing Sources
 
-Marketing Sources are custom lead-origin labels used to tag where a lead came from when GHL CRM is not connected (e.g., Google Ads, Facebook, Referral).
+Marketing Sources are your own labels for where your enquiries come from, for example Google Ads, Facebook, or Walk-in. Use them when GoHighLevel (GHL) is not connected. Open them from Settings > Marketing sources.
 
-![Marketing Sources page](/img/marketing-sources.jpg)
+<ThemedScreenshot
+  alt="Marketing sources page"
+  light="/img/marketing-sources-light.jpg"
+  dark="/img/marketing-sources-dark.jpg"
+/>
 
 ## When to Use
 
-- Tenant has no GHL integration connected and needs a manual way to track lead origin.
-- Sources appear as a dropdown when creating or editing a lead.
+- Your tenant has no GHL integration connected and you need a way to track where enquiries come from.
+- The sources you add become options in the **Marketing source** column on the Performance > Mapping tab.
 
 ## Manage Marketing Sources
 
 ### Add a Source
-1. Open Settings > Marketing Sources.
-2. Enter a source name (e.g., "Facebook").
-3. Click Add Source.
+
+1. Open Settings > Marketing sources.
+2. Type a source name in Add a source (e.g., "Facebook").
+3. Click Add source.
 
 ### Delete a Source
-Hover a source and click the trash icon, then confirm. Existing leads keep their assigned source; the option is removed from the dropdown for new leads.
+
+Click the trash icon next to a source and confirm. It's no longer offered as an option. Anything already set to that source keeps its value.
+
+## Use a Source
+
+1. Open Performance and select the Mapping tab. This tab is for owners.
+2. Find the number or agent name in the list.
+3. In the Marketing source column, choose a source.
+4. To remove it, choose No source.

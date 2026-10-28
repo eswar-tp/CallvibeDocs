@@ -21,9 +21,13 @@ description: Connect Exotel cloud telephony to CallVibe — get your API credent
 4. Select region.
 5. Click Connect and then start worker.
 
-![Settings page](/img/settings.JPG)
+<ThemedScreenshot alt="Settings page" light="/img/settings-light.JPG" dark="/img/settings-dark.JPG" />
 
-![Exotel connection](/img/exotel.JPG)
+<ThemedScreenshot
+  alt="Exotel connection"
+  light="/img/exotel-light.JPG"
+  dark="/img/exotel-dark.JPG"
+/>
 
 ## Validation
 
@@ -31,8 +35,14 @@ description: Connect Exotel cloud telephony to CallVibe — get your API credent
 
 - Exotel card shows Connected.
 - Worker does not show Exotel error.
-- Calls appear in Calls and Analytics.
+- Calls appear in Calls and Overview.
+- The Data health panel shows this provider as Receiving. A Connected card only means credentials are saved. See [Data Health](../overview.mdx#data-health).
 
 :::
 
-<img src="/img/exotel-connected.JPG" alt="After connection" width="200" />
+<ThemedScreenshot
+  alt="After connection"
+  light="/img/exotel-connected-light.JPG"
+  dark="/img/exotel-connected-dark.JPG"
+  width={200}
+/>

@@ -1,33 +1,42 @@
 ---
 sidebar_position: 3
 title: Customer Management
-description: Control how customer numbers appear in CallVibe analytics — tag Internal User, Key Customer, or Top Priority Lead and toggle internal visibility.
+description: Tag customer phone numbers in CallVibe as Internal user, Key customer, or Top priority lead, and choose whether internal users count in analytics.
 ---
 
 # Customer Management
 
-Use this section to control how customer numbers are treated in analytics.
+Tag a phone number so the rest of CallVibe treats it differently. For example, exclude it from analytics, or move it to the front of a queue. Open it from Settings > Customer management.
 
-![Customer Management page](/img/customer-management.jpg)
+<ThemedScreenshot
+  alt="Customer management page"
+  light="/img/customer-management-light.jpg"
+  dark="/img/customer-management-dark.jpg"
+/>
 
 ## Available Tags
 
-- Internal User
-- Key Customer
-- Top Priority Lead
+- **Internal user:** A colleague, not a customer. Excluded from analytics.
+- **Key customer:** Flagged for extra attention in reporting.
+- **Top priority lead:** Shown first in follow-up queues.
 
-## How to Configure
+## Tag a Customer
 
-1. Open Settings > Customer Management.
-2. Search customer by phone or name.
-3. Select one or more tags.
-4. Save configuration.
+1. Open Settings > Customer management.
+2. In Tag a customer, search by name or phone number.
+3. Select the customer from the results.
+4. Under Add a tag, tick one or more tags.
+5. Click Apply tags.
 
-## Internal User Visibility
+Tags already on the customer show under Applied. Click the x on a tag to remove it.
 
-Use Show or Hide internal customers toggle to control visibility in analytics.
+## Internal Users in Analytics
+
+Use the **Include internal users** toggle to choose whether numbers tagged Internal user are counted in your dashboards.
+
+It's off by default, so a colleague calling in doesn't count as a customer call.
 
 ## Notes
 
-- Tags can be removed individually.
-- Changes apply to tenant-scoped data only.
+- Tags apply to your tenant's data only.
+- A customer can have more than one tag.

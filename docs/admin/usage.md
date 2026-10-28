@@ -1,32 +1,48 @@
 ---
 sidebar_position: 2
 title: Usage & Limits
-description: Track CallVibe AI processing minutes — monitor wallet balance, allocated and consumed minutes, top-ups, and low-balance or exhausted plan banners.
+description: Track CallVibe AI processing minutes — see your balance remaining, allocated, consumed, and top-up minutes, plus low-balance and exhausted warnings.
 ---
 
 # Usage & Limits
 
-Usage & Limits tracks the AI processing minutes wallet for your tenant. Every call analyzed by the AI consumes minutes from this balance.
+Usage & Limits shows your AI processing wallet. Every call the AI analyzes uses minutes from this balance. Open it from Settings > Usage & limits.
 
-![Usage and Limits page](/img/usage-and-limits.jpg)
+<ThemedScreenshot
+  alt="Usage and limits page"
+  light="/img/usage-and-limits-light.jpg"
+  dark="/img/usage-and-limits-dark.jpg"
+/>
 
 ## Plan Types
 
-- **Unlimited Plan:** No AI processing limit. All calls and WhatsApp chats are analyzed without restriction. Total minutes consumed all-time is shown for reference.
-- **Wallet Plan:** Fixed balance of minutes. Shows Balance Remaining, Allocated, Consumed, and Top-ups.
+- **Unlimited plan:** No AI processing limit. Every call and WhatsApp chat is analyzed. The page shows the total minutes used all time.
+- **Wallet plan:** A fixed balance of minutes. The page shows your balance remaining and a usage bar.
 
-## Status Banners
+## Wallet Figures
 
-- **Low balance:** Shown once 80% or more of the wallet is used.
-- **Balance exhausted:** Shown when usage goes over the limit. New calls are still stored, but AI analysis is skipped until minutes are topped up.
+- **Balance remaining:** Minutes left, out of your total allocated.
+- **Usage bar:** How much of your minutes are used. It turns amber at 70% and red at 90%.
+- **Allocated:** Total minutes in your plan.
+- **Consumed:** Minutes used so far.
+- **Top-ups:** Minutes added to your wallet.
+
+The top bar also shows your minutes left, for example "154 min left". It changes to "No AI balance" when the wallet is empty.
+
+## Warnings
+
+- **Low balance:** Shown when 80% or more of your minutes are used. Contact your administrator to top up before analysis stops.
+- **Balance exhausted:** Shown when you go over the limit. New calls are still stored, but AI analysis is skipped until the wallet is topped up.
 
 ## How AI Minutes Are Counted
 
 - Every call is billable and counted toward your minutes.
-- Unused minutes roll over — your balance never resets automatically.
-- Unrecorded calls (no audio file) are never counted toward your balance.
+- Unused minutes roll over. Your balance never resets automatically.
+- Unrecorded calls (no audio file) are never counted.
 
 ## View Usage
-1. Open Settings > Usage & Limits.
-2. Review Balance Remaining, the usage bar, and the Allocated / Consumed / Top-ups breakdown.
-3. Contact your administrator to top up minutes when the balance is low or exhausted.
+
+1. Open Settings > Usage & limits.
+2. Check Balance remaining and the usage bar.
+3. Review Allocated, Consumed, and Top-ups.
+4. Contact your administrator to top up when the balance is low or exhausted.

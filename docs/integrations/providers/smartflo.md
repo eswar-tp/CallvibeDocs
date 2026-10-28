@@ -26,9 +26,13 @@ description: Connect Smartflo (Tata Tele) to CallVibe — generate an API token 
 4. Click Connect.
 5. Start worker.
 
-![Settings page](/img/settings.JPG)
+<ThemedScreenshot alt="Settings page" light="/img/settings-light.JPG" dark="/img/settings-dark.JPG" />
 
-![Smartflo connection](/img/smartflo.JPG)
+<ThemedScreenshot
+  alt="Smartflo connection"
+  light="/img/smartflo-light.JPG"
+  dark="/img/smartflo-dark.JPG"
+/>
 
 ## Validation
 
@@ -37,7 +41,13 @@ description: Connect Smartflo (Tata Tele) to CallVibe — generate an API token 
 - Status changes to Connected.
 - Worker remains healthy.
 - Recent records are imported.
+- The Data health panel shows this provider as Receiving. A Connected card only means credentials are saved. See [Data Health](../overview.mdx#data-health).
 
 :::
 
-<img src="/img/smartflo-connected.JPG" alt="After connection" width="200" />
+<ThemedScreenshot
+  alt="After connection"
+  light="/img/smartflo-connected-light.JPG"
+  dark="/img/smartflo-connected-dark.JPG"
+  width={200}
+/>

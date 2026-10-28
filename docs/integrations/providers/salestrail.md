@@ -13,10 +13,13 @@ description: Connect SalesTrail Call Analytics to CallVibe — generate Pull API
 ## Steps to Get Credentials
 
 1. Log in to your SalesTrail Call Analytics Dashboard at [standalone.salestrail.io/login](https://standalone.salestrail.io/login).
-2. At the top of the page, open the API documentation panel.
+2. In the left menu, open **Integrations** and select **Pull API**. This opens the Salestrail Analytics API page.
 3. Click **Generate Pull API credentials**.
-4. Copy the generated Username and Password immediately — the password disappears once you refresh or leave the page.
-5. Base64-encode `username:password` and use that value as the API key in CallVibe.
+4. Copy the generated Username and Password right away, then Base64-encode `username:password`. The password disappears when you refresh or leave the page.
+5. On the same page, click the green **Authorize** button. Enter your SalesTrail Username and Password in the pop-up, then click **Authorize**.
+6. Scroll down to `GET /export/calls/byCreated/csv`. Click it, then click **Try it out**, then **Execute**. This only reads data and changes nothing in SalesTrail.
+7. In the response, find the cURL command and look for `-H "Authorization: Basic ..."`.
+8. Copy only the long string after `Basic `. Don't copy the word `Basic` or the quotes. For example, in `-H "Authorization: Basic YWZkZWE0ZDItZjM5Mi00NGQyLcHI="`, your API key is `YWZkZWE0ZDItZjM5Mi00NGQyLcHI=`.
 
 ## Setup
 
@@ -26,9 +29,13 @@ description: Connect SalesTrail Call Analytics to CallVibe — generate Pull API
 4. Click Connect.
 5. Start worker.
 
-![Settings page](/img/settings.JPG)
+<ThemedScreenshot alt="Settings page" light="/img/settings-light.JPG" dark="/img/settings-dark.JPG" />
 
-![Salestrail connection](/img/salestrail.JPG)
+<ThemedScreenshot
+  alt="Salestrail connection"
+  light="/img/salestrail-light.JPG"
+  dark="/img/salestrail-dark.JPG"
+/>
 
 ## Validation
 
@@ -37,7 +44,13 @@ description: Connect SalesTrail Call Analytics to CallVibe — generate Pull API
 - Integration status shows Connected.
 - Worker runs without provider error.
 - New calls appear in Calls view.
+- The Data health panel shows this provider as Receiving. A Connected card only means credentials are saved. See [Data Health](../overview.mdx#data-health).
 
 :::
 
-<img src="/img/salestrail-connected.JPG" alt="After connection" width="200" />
+<ThemedScreenshot
+  alt="After connection"
+  light="/img/salestrail-connected-light.JPG"
+  dark="/img/salestrail-connected-dark.JPG"
+  width={200}
+/>

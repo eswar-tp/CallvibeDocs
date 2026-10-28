@@ -20,7 +20,11 @@ sidebar_label: WhatsApp
 4. Subscribe to message:new.
 5. Click I have connected.
 
-![WhatsApp connection](/img/whatsapp.jpg)
+<ThemedScreenshot
+  alt="WhatsApp connection"
+  light="/img/whatsapp-light.jpg"
+  dark="/img/whatsapp-dark.jpg"
+/>
 
 ## Validation
 
@@ -32,4 +36,9 @@ sidebar_label: WhatsApp
 
 :::
 
-<img src="/img/whatsapp-after-connection.jpg" alt="After connection" width="200" />
+<ThemedScreenshot
+  alt="After connection"
+  light="/img/whatsapp-after-connection-light.jpg"
+  dark="/img/whatsapp-after-connection-dark.jpg"
+  width={200}
+/>
